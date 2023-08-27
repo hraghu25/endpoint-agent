@@ -1,16 +1,22 @@
-# endpoint-agent
+## endpoint-agent
 This agent will monitor URLs 
 
 
---Execute the below command on Mac OS Terminal
+### Execute the below command on Mac OS Terminal
 
+```bash
 python agent.py --config_file=config.yaml
+```
 
 
---Create Binary file using pyinstaller 
+### Create Binary file using pyinstaller 
 
+```bash
 pyinstaller --onefile=agent.py
+```
 
+Output
+```
 113 INFO: PyInstaller: 5.13.1
 113 INFO: Python: 3.11.0
 130 INFO: Platform: macOS-13.5-arm64-arm-64bit
@@ -55,8 +61,10 @@ pyinstaller --onefile=agent.py
 5335 INFO: Removing signature(s) from EXE
 5352 INFO: Appending PKG archive to EXE
 5354 INFO: Fixing EXE headers for code signing
+```
 
+### Binary file execution
 
---Binary file execution
-
+```bash
 ./agent --config_file=config.yaml
+```
