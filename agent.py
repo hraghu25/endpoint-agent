@@ -4,7 +4,7 @@ import time
 import argparse
 from datetime import datetime
 
-LOG_FILE = "urlmonitoring.log"
+LOG_FILE = "./urlmonitoring.log"
 
 def log_info(msg):
     with open(LOG_FILE, 'a') as f:
